@@ -1,6 +1,6 @@
 #!/bin/bash
 
-seznam=/predmet.txt
+seznam=./predmet.txt
 
 mkdir studij
 cd studij
