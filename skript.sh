@@ -1,15 +1,12 @@
 #!/bin/bash
 
-seznam=./predmet.txt
+seznam="predmet.txt"
 
-mkdir studij
-cd studij
+mkdir -p studij
 
-while read line
+while read -r line
 do 
-    mkdir $line
-    cd $line 
-    mkdir vaje
-    mkdir predavanja
+    mkdir -p "studij/$line"
+    mkdir -p "studij/$line/vaje"
+    mkdir -p "studij/$line/predavanja"
 done < "$seznam"
-
